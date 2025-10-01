@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,5 +28,63 @@
                     <a href="Bajas_Almacen.html" class="list-group-item list-group-item-action">Bajas Almacen</a>
                     <a href="Productos.html" class="list-group-item list-group-item-action">Productos</a>
                     <a href="Proveedores.html" class="list-group-item list-group-item-action active">Proveedores</a>
+                </div>
+            </div>
+            <div class="col-md-9 col-lg-10">
+                <h3 class="mb-4 text-center">Reporte de Proveedores</h3>
+                <div class="card shadow-sm mb-4 p-4">
+                    <form class="row g-3 align-items-center mb-4">
+                        <div class="col-md-4">
+                            <label for="rubro" class="form-label">Rubro:</label>
+                            <div class="input-group">
+                                <input type="text" id="rubro" class="form-control"
+                                    placeholder="Ej: Alimentos, Limpieza...">
+                                <button class="btn btn-warning" type="button">Buscar</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                        </div>
+                    </form>
+
+                    <h5 class="mt-4 mb-3">Listado de Proveedores</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Proveedor</th>
+                                    <th>Razón Social</th>
+                                    <th>RUC</th>
+                                    <th>Teléfono</th>
+                                    <th>Dirección</th>
+                                    <th>Rubro</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Abarrotes S.A.</td>
+                                    <td>Abarrotes del Norte SAC</td>
+                                    <td></td>
+                                    <td>987654321</td>
+                                    <td></td>
+                                    <td>Alimentos</td>
+                                </tr>
+                                <tr>
+                                    <td>Limpieza Total</td>
+                                    <td>Servicios de Limpieza E.I.R.L.</td>
+                                    <td></td>
+                                    <td>999888777</td>
+                                    <td></td>
+                                    <td>Limpieza</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>

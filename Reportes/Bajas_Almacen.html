@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,3 +30,94 @@
                     <a href="Proveedores.html" class="list-group-item list-group-item-action">Proveedores</a>
                 </div>
             </div>
+
+            <div class="col-md-9 col-lg-10">
+                <h3 class="mb-4 text-center">Reporte de Bajas</h3>
+
+                <div class="card shadow-sm mb-4 p-4">
+                    <form class="row g-3 align-items-center">
+
+                        <div class="col-12 d-flex flex-wrap align-items-center gap-4">
+
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="filtroReporte"
+                                        id="filtroProducto" value="producto" checked>
+                                    <label class="form-check-label" for="filtroProducto">
+                                        Producto:
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" id="nombre" class="form-control"
+                                        placeholder="Nombre del Producto...">
+                                    <button class="btn btn-warning" type="button">Buscar</button>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="filtroReporte" id="filtroFecha"
+                                        value="fecha">
+                                    <label class="form-check-label" for="filtroFecha">
+                                        Fecha:
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="date" id="fecha" class="form-control">
+                                    <button class="btn btn-warning" type="button">Buscar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <h5 class="mt-4 mb-3">Detalle del Reporte</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Usuario</th>
+                                    <th>Turno</th>
+                                    <th>Nombre Producto</th>
+                                    <th>Cantidad</th>
+                                    <th>Unidad Medida</th>
+                                    <th>Fecha</th>
+                                    <th>Observaciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Usuario 1</td>
+                                    <td>Tarde</td>
+                                    <td>Harina</td>
+                                    <td>5</td>
+                                    <td>Kg</td>
+                                    <td>01/09/2025</td>
+                                    <td>Caducidad</td>
+                                </tr>
+                                <tr>
+                                    <td>Usuario 2</td>
+                                    <td>Mañana</td>
+                                    <td>Lechuga</td>
+                                    <td>10</td>
+                                    <td>Unid</td>
+                                    <td>01/09/2025</td>
+                                    <td>Mal estado</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
